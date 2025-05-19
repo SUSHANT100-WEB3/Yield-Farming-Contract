@@ -1,10 +1,8 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
-
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 import "@openzeppelin/contracts/utils/math/SafeCast.sol"; // For SafeCast if needed
-
 // Interface for fetching ERC-20 metadata (decimals)
 interface IERC20Metadata is IERC20 {
     function decimals() external view returns (uint8);
